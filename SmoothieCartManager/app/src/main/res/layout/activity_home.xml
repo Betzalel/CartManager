@@ -1,0 +1,80 @@
+ <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="edu.gatech.seclass.scm.views.HomeScreen">
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/select_customer"
+        android:id="@+id/selectCustomerButton"
+        android:layout_below="@+id/scanQrButton"
+        android:layout_centerHorizontal="true" />
+
+     <TextView
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:textAppearance="?android:attr/textAppearanceMedium"
+         android:text=""
+         android:id="@+id/errorMessage"
+         android:layout_above="@+id/scanQrButton"
+         android:layout_centerHorizontal="true" />
+
+
+     <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/scan_qr_code"
+        android:id="@+id/scanQrButton"
+        android:layout_centerVertical="true"
+        android:layout_alignStart="@+id/selectCustomerButton"
+        android:layout_alignEnd="@+id/selectCustomerButton"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/add_customer"
+        android:id="@+id/addCustomerButton"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/scanQrButton"
+        android:layout_alignEnd="@+id/scanQrButton"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/selected_customer"
+        android:id="@+id/customerName"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Medium Text"
+        android:id="@+id/customerNameText"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/return_order"
+        android:id="@+id/orderReturnButton"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/customerName" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/clear_customer"
+        android:id="@+id/customerClearButton"
+        android:layout_alignParentEnd="true"
+        android:onClick="onClick()"
+        android:layout_below="@+id/customerNameText" />
+
+</RelativeLayout>
