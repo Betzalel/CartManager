@@ -16,3 +16,4 @@ My contributions were to the following:
   - Unit
   - Integration
   - Regression
+- Bug Fixes
